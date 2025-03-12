@@ -3,53 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Simple E-Commerce Website</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            margin-top: 15px;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .product p {
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .product span {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #e60000;
+        }
+
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>John Doe</h1>
-        <p>Web Developer | Designer | Freelancer</p>
-    </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>Hello! I'm John, a passionate web developer and designer. I specialize in creating responsive, user-friendly websites and applications. With a background in both design and development, I focus on delivering seamless and visually appealing experiences to users.</p>
-    </section>
+<header>
+    <h1>My E-Commerce Store</h1>
+    <p>Best products at the best prices!</p>
+</header>
 
-    <section>
-        <h2>My Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>UI/UX Design</li>
-            <li>Responsive Web Design</li>
-        </ul>
-    </section>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Cart</a>
+    <a href="#">Contact</a>
+</nav>
 
-    <section>
-        <h2>Portfolio</h2>
-        <p>Here are a few of my recent projects:</p>
-        <ul>
-            <li><a href="https://www.example.com/project1" target="_blank">Project 1: Personal Website</a> - A responsive portfolio website to showcase my work.</li>
-            <li><a href="https://www.example.com/project2" target="_blank">Project 2: E-commerce Site</a> - A fully functional e-commerce platform built with React and Node.js.</li>
-            <li><a href="https://www.example.com/project3" target="_blank">Project 3: Blog Application</a> - A blog application built using HTML, CSS, and JavaScript.</li>
-        </ul>
-    </section>
+<div class="container">
+    <!-- Product 1 -->
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1592929301831-f6e74f04d774?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg2OXwwfDF8c2VhY2h8Mnx8fHByb2R1Y3R8ZW58MHx8fHwxNjA1Njc3MTgy&ixlib=rb-1.2.1&q=80&w=400" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>A great product to meet all your needs.</p>
+        <span>$49.99</span>
+        <button class="btn">Add to Cart</button>
+    </div>
 
-    <section>
-        <h2>Contact</h2>
-        <p>If you'd like to collaborate or discuss a project, feel free to get in touch with me:</p>
-        <ul>
-            <li>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></li>
-            <li>Phone: +123 456 7890</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></li>
-        </ul>
-    </section>
+    <!-- Product 2 -->
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1506748686214-2f6f0ea85076?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg2OXwwfDF8c2VhY2h8Mjh8fHByb2R1Y3R8ZW58MHx8fHwxNjA1Njc3MTgy&ixlib=rb-1.2.1&q=80&w=400" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>This product is top-rated by our customers.</p>
+        <span>$79.99</span>
+        <button class="btn">Add to Cart</button>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 John Doe. All Rights Reserved.</p>
-    </footer>
+    <!-- Product 3 -->
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1593701414095-b99a29d12102?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg2OXwwfDF8c2VhY2h8Mjl8fHByb2R1Y3R8ZW58MHx8fHwxNjA1Njc3MTgy&ixlib=rb-1.2.1&q=80&w=400" alt="Product 3">
+        <h3>Product 3</h3>
+        <p>Great value for money, don’t miss out!</p>
+        <span>$29.99</span>
+        <button class="btn">Add to Cart</button>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1570969734985-50647dcb6031?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg2OXwwfDF8c2VhY2h8Mzl8fHByb2R1Y3R8ZW58MHx8fHwxNjA1Njc3MTgy&ixlib=rb-1.2.1&q=80&w=400" alt="Product 4">
+        <h3>Product 4</h3>
+        <p>High quality product with amazing features.</p>
+        <span>$59.99</span>
+        <button class="btn">Add to Cart</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 My E-Commerce Store. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
